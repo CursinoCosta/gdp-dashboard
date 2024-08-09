@@ -171,7 +171,7 @@ plt.tight_layout()
 with st.container():
     st.write("---")
 
-    st.write("TEXTO EXPLICATIVO SOBRE O PLOT")
+    st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
     st.pyplot(fig)
 
@@ -249,7 +249,7 @@ plt.tight_layout()
 with st.container():
     st.write("---")
 
-    st.write("TEXTO EXPLICATIVO SOBRE O PLOT")
+    st.write("Nesse segundo plot adicionamos uma taxa média de inscricões por região para incrementar a análise.")
 
     st.pyplot(fig)
 
@@ -341,7 +341,7 @@ plt.legend()
 with st.container():
     st.write("---")
 
-    st.write("TEXTO EXPLICATIVO SOBRE O PLOT")
+    (st.write("Aqui temos um teste de confiabilidade dos dados, foi utilizado um teste de permutação. Foi definido um intervalo de confiança de 94% e percebemos que os dados observados de fato não foram ao acaso."))
 
     st.pyplot(fig)
 
