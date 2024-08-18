@@ -120,9 +120,11 @@ if opcode == "Aulas Online":
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
-        st.write("Resultados para 2017-2019:\n\nR2 (treino): 0.2399\n\nR2 (corpo): 0,2402\n\nMSE (treino): 0.0063\n\nMSE (caras): 0,0063\n\nMelhor valor de alpha encontrado na validação cruzada: 1.000000\n\nCoeficientes:\n\n  Classe Social A: 0.1687\n\n  Classe Social B: 0,1275\n\n  Classe Social C: 0,0894\n\n  Classe Social D: 0,0392\n\nInterceptação: 0,5340\n\n\n\nResultados para 2020:\n\nR2 (treino): 0.2434\n\nR2 (corpo): 0,2460\n\nMSE (treino): 0.0076\n\nMSE (caras): 0,0076\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1713\n\n  Classe Social B: 0,1356\n\n  Classe Social C: 0,1013\n\n  Classe Social D: 0,0490\n\nInterceptação: 0,5387\n\n\n\nResultados para 2022:\n\nR2 (treino): 0.2255\n\nR2 (corpo): 0,2269\n\nMSE (treino): 0.0070\n\nMSE (caras): 0,0070\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1557\n\n  Classe Social B: 0,1238\n\n  Classe Social C: 0,0915\n\n  Classe Social D: 0,0468\n\nInterceptação: 0,5490")
-
-
+        st.write("Resultados para 2017-2019:\n\nR2 (treino): 0.2399\n\nR2 (corpo): 0,2402\n\nMSE (treino): 0.0063\n\nMSE (caras): 0,0063\n\nMelhor valor de alpha encontrado na validação cruzada: 1.000000\n\nCoeficientes:\n\n  Classe Social A: 0.1687\n\n  Classe Social B: 0,1275\n\n  Classe Social C: 0,0894\n\n  Classe Social D: 0,0392\n\nInterceptação: 0,5340\n\n\n\n")
+        st.write("---")
+        st.write("Resultados para 2020:\n\nR2 (treino): 0.2434\n\nR2 (corpo): 0,2460\n\nMSE (treino): 0.0076\n\nMSE (caras): 0,0076\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1713\n\n  Classe Social B: 0,1356\n\n  Classe Social C: 0,1013\n\n  Classe Social D: 0,0490\n\nInterceptação: 0,5387\n\n\n\n")
+        st.write("---")
+        st.write("Resultados para 2022:\n\nR2 (treino): 0.2255\n\nR2 (corpo): 0,2269\n\nMSE (treino): 0.0070\n\nMSE (caras): 0,0070\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1557\n\n  Classe Social B: 0,1238\n\n  Classe Social C: 0,0915\n\n  Classe Social D: 0,0468\n\nInterceptação: 0,5490")
 
 if opcode == "Treineiros":
     with st.container():
