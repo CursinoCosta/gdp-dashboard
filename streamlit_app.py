@@ -120,7 +120,7 @@ if opcode == "Aulas Online":
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
-        st.text("imagens igor/reg.png")
+        st.write("Resultados para 2017-2019:\nR2 (treino): 0.2399\nR2 (corpo): 0,2402\nMSE (treino): 0.0063\nMSE (caras): 0,0063\nMelhor valor de alpha encontrado na validação cruzada: 1.000000\nCoeficientes:\n  Classe Social A: 0.1687\n  Classe Social B: 0,1275\n  Classe Social C: 0,0894\n  Classe Social D: 0,0392\nInterceptação: 0,5340\n\nResultados para 2020:\nR2 (treino): 0.2434\nR2 (corpo): 0,2460\nMSE (treino): 0.0076\nMSE (caras): 0,0076\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\nCoeficientes:\n  Classe Social A: 0.1713\n  Classe Social B: 0,1356\n  Classe Social C: 0,1013\n  Classe Social D: 0,0490\nInterceptação: 0,5387\n\nResultados para 2022:\nR2 (treino): 0.2255\nR2 (corpo): 0,2269\nMSE (treino): 0.0070\nMSE (caras): 0,0070\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\nCoeficientes:\n  Classe Social A: 0.1557\n  Classe Social B: 0,1238\n  Classe Social C: 0,0915\n  Classe Social D: 0,0468\nInterceptação: 0,5490")
 
 
 
