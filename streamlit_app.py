@@ -190,6 +190,8 @@ if opcode == "Aulas Online":
         st.write("Ademais, em 2022 houve uma diminuição nos coeficientes para todas as classes sociais em comparação com 2020, voltando a um pouco mais próximos em relação ao período de 2017-2019.")
 
         st.image("imagens igor/12.png")
+
+        st.write("Com base em todos esses resultados obtidos, podemos concluir que as aulas online durante a pandemia afetaram as notas do ENEM. No entanto, diferente do que era esperado, as notas do ENEM subiram durante a pandemia. Como dito anteriormente, uma possível explicação para isso ter ocorrido foi que mais alunos sabiam que não estavam preparados por conta da má qualidade do ensino remoto, logo preferiram se absterem de fazer a prova. Com isso,  as notas aumentaram de forma artificial.")
         
 
 
