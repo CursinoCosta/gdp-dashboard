@@ -64,7 +64,7 @@ if opcode == "Aulas Online":
     with st.container():
         st.write("---")
 
-        st.write("Limpeza e organização dos dados\n\nAnteriormente, a base de dados possuia muitas colunas, mas, para fins de otimizações das operações feitas no dataframe, foram selecionados apenas as colunas:")
+        st.subheader("Limpeza e organização dos dados\n\nAnteriormente, a base de dados possuia muitas colunas, mas, para fins de otimizações das operações feitas no dataframe, foram selecionados apenas as colunas:")
         st.write("- TP_ST_CONCLUSAO = 2: Conclusão do Ensino Médio no mesmo ano da aplicação do exame")
         st.write("- TP_PRESENCA_MT = 1: Presença na prova de Matemática")
         st.write("- TP_PRESENCA_CN = 1: Presença na prova de Ciências da Natureza")
@@ -72,11 +72,11 @@ if opcode == "Aulas Online":
         st.write("- TP_PRESENCA_CH = 1: Presença na prova de Ciências Humanas")
         st.write("Dessa forma, os resultados da base não serão influenciados por alunos que faltaram em alguma prova ou que já tiveram anteriormente a oportunidade de fazer o terceiro ano do Ensino Médio sem a pandemia.")
         st.write("Além disso, também foi feito o mapeamento das 18 faixas de renda existentes para apenas 5 classes sociais diferentes (A, B, C, D, E) em que a classe social A possui mais recursos financeiros.")
-        st.write("##### Classe E = 0 até 1 salário mínimo.")
-        st.write("##### Classe D = 1 até 3 salários mínimos.")
-        st.write("##### Classe C = 3 até 6 salários mínimos.")
-        st.write("##### CLasse B = 6 até 10 salários mínimos.")
-        st.write("##### Classe A = 10 até 20 salários mínimos.")
+        st.write("### Classe E = 0 até 1 salário mínimo.")
+        st.write("### Classe D = 1 até 3 salários mínimos.")
+        st.write("### Classe C = 3 até 6 salários mínimos.")
+        st.write("### CLasse B = 6 até 10 salários mínimos.")
+        st.write("### Classe A = 10 até 20 salários mínimos.")
         st.write("Também foi feito a normalização das notas já que para cada ano o ENEM possui uma nota máxima e mínima diferente. Dessa forma, um ano com nota máxima maior não teria vantagem em relação a um ano com nota máxima menor.")
         
         
@@ -121,30 +121,71 @@ if opcode == "Aulas Online":
         st.image("imagens igor/6.png")
 
 
+        st.subheader("Testes de Hipótese e Intervalo de Confiança utilizando Teste de Permutação")
+        st.write("Testes de Hipótese e Intervalo de Confiança utilizando Teste de Permutação")
+        st.write("Ha: Média total da Classe X em 2017-2019 !=  Média total da Classe X em 2020 (Durante a pandemia)")
+        st.write("Com limiar de significância de 5%")
+        st.write("H0: Média total da Classe X em 2017-2019  =  Média total da Classe X em 2022 (Após a pandemia)")
+        st.write("Ha: Média total da Classe X em 2017-2019 !=  Média total da Classe X em 2022 (Após a pandemia)")
+        st.write("Com limiar de significância de 5%")
+        st.write("Também foi feito testes de permutações e em todas resultaram na rejeição das hipóteses nulas (de que as médias dos anos comparados foram iguais) a um nível de significância de 5%. Isso fornece fortes evidências estatísticas de que há diferenças significativas entre as médias dos períodos comparados para cada classe social.")
+
+        st.write("Classe Social A:")
+        st.write("  2017_2019_vs_2020: Rejeitar H0 = True")
+        st.write("  2017_2019_vs_2022: Rejeitar H0 = True")
+        st.write("--")
+        st.write("Classe Social B:")
+        st.write("  2017_2019_vs_2020: Rejeitar H0 = True")
+        st.write("  2017_2019_vs_2022: Rejeitar H0 = True")
+        st.write("--")
+        st.write("Classe Social C:")
+        st.write("  2017_2019_vs_2020: Rejeitar H0 = True")
+        st.write("  2017_2019_vs_2022: Rejeitar H0 = True")
+        st.write("Classe Social D:")
+        st.write("  2017_2019_vs_2020: Rejeitar H0 = True")
+        st.write("2017_2019_vs_2022: Rejeitar H0 = True")
+        st.write("--")
+        st.write("Classe Social E:")
+        st.write("2017_2019_vs_2020: Rejeitar H0 = True")
+        st.write(" 2017_2019_vs_2022: Rejeitar H0 = True")
+        st.write("--")
+
+
     with st.container():
         st.write("---")
 
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
+        st.subheader("Regressão Linear")
 
-        st.image("imagens igor/11.png")
+        st.write("Primeiro foi aplicado o One-Hot-Encondign para a variável categórica de Classe Social para ser possível fazer a regressão.")
+        st.write("Para a regressão foi utilizado o algoritmo do RidgeRegression.")
 
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/12.png")
-
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
         st.write("Resultados para 2017-2019:\n\nR2 (treino): 0.2399\n\nR2 (corpo): 0,2402\n\nMSE (treino): 0.0063\n\nMSE (caras): 0,0063\n\nMelhor valor de alpha encontrado na validação cruzada: 1.000000\n\nCoeficientes:\n\n  Classe Social A: 0.1687\n\n  Classe Social B: 0,1275\n\n  Classe Social C: 0,0894\n\n  Classe Social D: 0,0392\n\nInterceptação: 0,5340\n\n\n\n")
         st.write("---")
         st.write("Resultados para 2020:\n\nR2 (treino): 0.2434\n\nR2 (corpo): 0,2460\n\nMSE (treino): 0.0076\n\nMSE (caras): 0,0076\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1713\n\n  Classe Social B: 0,1356\n\n  Classe Social C: 0,1013\n\n  Classe Social D: 0,0490\n\nInterceptação: 0,5387\n\n\n\n")
         st.write("---")
         st.write("Resultados para 2022:\n\nR2 (treino): 0.2255\n\nR2 (corpo): 0,2269\n\nMSE (treino): 0.0070\n\nMSE (caras): 0,0070\n\nMelhor valor de alpha encontrado na validação cruzada: 0.100000\n\nCoeficientes:\n\n  Classe Social A: 0.1557\n\n  Classe Social B: 0,1238\n\n  Classe Social C: 0,0915\n\n  Classe Social D: 0,0468\n\nInterceptação: 0,5490")
+
+        st.write("O modelo teve um poder explicativo um pouco maior em 2020 (R² = 0.2460) comparado a 2017-2019 (R² = 0.2402) e 2022 (R² = 0.2269), ou seja, indica que a relação entre classe social e a nota média no ENEM foi um pouco maior durante o pico da pandemia (2020).")
+        st.write("Mas, de qualquer forma, os valores R² não foram altos em todos os períodos analisados, ou seja, a classe social sozinha só explicou cerca de 22.69% - 24.60% da variação da nota do ENEM.")
+        st.write("Ademais, o Erro-Quadrático-Médio foi muito pequeno para todos os nossos testes. Isso se deve ao fato de que, como dito anteriormente, a nossa amostra é a nossa própria população. Logo, a lei dos grande números atua para esse intervalo ser quase que insignificante.")
+        
+        
+        st.image("imagens igor/11.png")
+
+    with st.container():
+        st.write("---")
+
+        st.write("Além disso, os coeficientes das classes sociais mostram que as classes sociais mais alta estão associadas a notas medias mais altas no ENEM.")
+        st.write("Ademais, para todas as classes sociais ocorreu um aumento nos coeficientes de 2020 em relação ao período de 2017-2019, mas esse aumento foi ainda mais relevante para as classes sociais mais baixas.")
+        st.write("Uma possível explicação para isso ter acontecido é que, durante a pandemia, os alunos, principalmente de classes sociais mais baixas (que tinham um acesso de educação de menos qualidade) sabiam que não estavam preparados para a prova e, consequentemente, desistiram de ir fazer a prova. Dessa forma, as notas das classes sociais foi aumentada de forma artificial.")
+        st.write("Ademais, em 2022 houve uma diminuição nos coeficientes para todas as classes sociais em comparação com 2020, voltando a um pouco mais próximos em relação ao período de 2017-2019.")
+
+        st.image("imagens igor/12.png")
+        
+
+
+
 
 if opcode == "Treineiros":
     with st.container():
