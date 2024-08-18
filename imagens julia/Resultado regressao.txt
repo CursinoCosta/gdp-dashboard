@@ -1,0 +1,59 @@
+Ano: 2017
+Coeficientes do Modelo:
+const    518.545713
+x1         3.962371
+dtype: float64
+Intervalos de Confiança dos Coeficientes:
+                0          1
+const  518.463326  518.62810
+x1       3.879983    4.04476
+MSE no Conjunto de Teste: 6254.271837381669
+Intervalo de Confiança para o MSE: [6267.71672497 6304.06508896]
+
+Ano: 2018
+Coeficientes do Modelo:
+const    528.942662
+x1         3.838659
+dtype: float64
+Intervalos de Confiança dos Coeficientes:
+                0           1
+const  528.850963  529.034361
+x1       3.746959    3.930358
+MSE no Conjunto de Teste: 6831.722050477141
+Intervalo de Confiança para o MSE: [6839.77384318 6881.1069834 ]
+
+Ano: 2019
+Coeficientes do Modelo:
+const    522.617536
+x1         1.902510
+dtype: float64
+Intervalos de Confiança dos Coeficientes:
+                0           1
+const  522.522290  522.712782
+x1       1.807269    1.997751
+MSE no Conjunto de Teste: 6995.509428938838
+Intervalo de Confiança para o MSE: [6980.5747805  7024.85840392]
+
+Ano: 2020
+Coeficientes do Modelo:
+const    526.569047
+x1         0.523770
+dtype: float64
+Intervalos de Confiança dos Coeficientes:
+                0           1
+const  526.444596  526.693498
+x1       0.399348    0.648192
+MSE no Conjunto de Teste: 8353.128568400549
+Intervalo de Confiança para o MSE: [8322.92980694 8383.31594867]
+
+Ano: 2022
+Coeficientes do Modelo:
+const    543.512720
+x1        -0.031736
+dtype: float64
+Intervalos de Confiança dos Coeficientes:
+                0           1
+const  543.386726  543.638714
+x1      -0.157720    0.094247
+MSE no Conjunto de Teste: 7748.166103559379
+Intervalo de Confiança para o MSE: [7717.81131933 7778.4873429 ]

@@ -68,12 +68,6 @@ if opcode == "Aulas Online":
 
         st.image("imagens igor/1.png")
 
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/2.png")
 
     with st.container():
         st.write("---")
@@ -105,33 +99,6 @@ if opcode == "Aulas Online":
 
         st.image("imagens igor/6.png")
 
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/7.png")
-
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/8.png")
-
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/9.png")
-
-    with st.container():
-        st.write("---")
-
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
-
-        st.image("imagens igor/10.png")
 
     with st.container():
         st.write("---")
@@ -147,7 +114,13 @@ if opcode == "Aulas Online":
 
         st.image("imagens igor/12.png")
 
-    
+
+    with st.container():
+        st.write("---")
+
+        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
+
+        st.write("imagens igor/reg.png")
 
 
 
