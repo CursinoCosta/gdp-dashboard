@@ -117,6 +117,13 @@ if opcode == "Aulas Online":
 
     with st.container():
         st.write("---")
+        uploaded_file = st.file_uploader("imagens igor/reg.txt")
+        if uploaded_file:
+            for line in uploaded_file:
+                st.write(line)
+
+    with st.container():
+        st.write("---")
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
