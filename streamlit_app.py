@@ -19,6 +19,12 @@ st.set_page_config(page_title="Trabalho Prático ICD")
 with st.container():
     st.subheader("Análise dos dados ENEM")
 
+    st.write("GRUPO 1")
+    st.write("INTEGRANTES:")
+    st.write("Igor Novais- 2022423407")
+    st.write("Julia Paes- 2021032137    ")
+    st.write("Mateus Costa- 2022043191")
+
     st.title("Perguntas")
 
     st.write("INTRODUÇÃO AO TRABALHO")
@@ -202,7 +208,6 @@ if opcode == "Treineiros":
 
 
     with st.container():
-        st.subheader("Fazer o ENEM como treineiro ajuda a melhorar a nota?")
         st.write("---")
 
         st.subheader("Teste de hipótese")
