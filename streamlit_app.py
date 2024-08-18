@@ -350,7 +350,7 @@ if opcode == "Aulas Online":
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
-        st.pyplot(fig)
+        st.image("imagens igor/1.png")
 
 if opcode == "Treineiros":
     with st.container():
@@ -358,4 +358,4 @@ if opcode == "Treineiros":
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
-        st.pyplot(fig)
+        st.image("imagens igor/1.png")
