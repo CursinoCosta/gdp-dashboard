@@ -120,7 +120,7 @@ if opcode == "Aulas Online":
 
         st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
 
-        st.write("imagens igor/reg.png")
+        st.text("imagens igor/reg.png")
 
 
 
