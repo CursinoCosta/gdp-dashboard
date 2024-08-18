@@ -61,7 +61,7 @@ if opcode == "Taxa Populacional":
         st.image("imagens mateus/3.png")
 
 
-        st.warning("Concluimos então que taxa populacional e de inscrição estão interligados, mas não, necessariamente, são proporcionais. Há fatores externos que influenciam nesses valores, uma possível hipótese são os fatores culturais como o histórico da importância dos vestibulares que existe no Nordeste ou a cultura de empreendedorismo e oportunidade de emprego no Sudeste, especialmente em São Paulo que pode levar a menos pessoas procurarem uma faculdade por lá.")
+        st.write("Concluimos então que taxa populacional e de inscrição estão interligados, mas não, necessariamente, são proporcionais. Há fatores externos que influenciam nesses valores, uma possível hipótese são os fatores culturais como o histórico da importância dos vestibulares que existe no Nordeste ou a cultura de empreendedorismo e oportunidade de emprego no Sudeste, especialmente em São Paulo que pode levar a menos pessoas procurarem uma faculdade por lá.")
 
 
 
