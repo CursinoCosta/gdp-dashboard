@@ -29,9 +29,10 @@ with st.container():
 if opcode == "Taxa Populacional":
     
     with st.container():
+        st.subheader("A taxa de inscritos por região é proporcional a taxa populacional por região?")
         st.write("---")
 
-        st.write("Primeiro plot, trás a análise comparativa entre a taxa populacional e a taxa de incrição em cada região do país, percebe-se diferença entre ambas. A diferêça se assentua especialmente após a pandemia.")
+        st.write("Primeiro plot, ele trás a análise comparativa entre a taxa populacional e a taxa de incrição em cada região do país, percebe-se diferença entre ambas. A diferêça se assentua especialmente após a pandemia.")
 
         st.image("imagens mateus/1.png")
 
@@ -62,6 +63,7 @@ if opcode == "Taxa Populacional":
 
 if opcode == "Aulas Online":
     with st.container():
+        st.subheader("Como as aulas onlines afetaram as notas do ENEM para cada faixa de renda durante a pandemia?")
         st.write("---")
 
         st.subheader("Limpeza e organização dos dados\n\nAnteriormente, a base de dados possuia muitas colunas, mas, para fins de otimizações das operações feitas no dataframe, foram selecionados apenas as colunas:")
@@ -189,8 +191,43 @@ if opcode == "Aulas Online":
 
 if opcode == "Treineiros":
     with st.container():
+        st.subheader("Fazer o ENEM como treineiro ajuda a melhorar a nota?")
         st.write("---")
 
-        st.write("Vemos inicialmente a comparação das taxas populacionais e taxas de inscrição por região.")
+        st.subheader("Analisando notas dos treineiros e não treineiros para cada ano analisado")
 
-        st.image("imagens igor/1.png")
+        st.write("As curvas de probabilidade se diferiram mais nos anos antes da pandemia (2017-2019) do que nos anos durante e imediatamente após ela (2020 e 2022). Antes da pandemia, a curva dos treineiros era deslocada na direção de maiores notas. O teste de hipótese aclarará essa aparente observação.")
+
+        st.image("imagens julia/1.png")
+
+
+    with st.container():
+        st.subheader("Fazer o ENEM como treineiro ajuda a melhorar a nota?")
+        st.write("---")
+
+        st.subheader("Teste de hipótese")
+
+        st.write("Usando bootstrap vamos comparar a diferença das médias das notas entre treineiros e não treineiros a cada ano e concluir se temos dados para aceitar ou rejeitar a hipótese de que não faz diferença fazer o ENEM apenas como teste em termos de nota (hipótese nula).")
+
+        st.image("imagens julia/2.png")
+
+        st.write("Podemos observar que:")
+        st.write("1. Antes da pandemia (2017 - 2019) a diferença das notas não incluiu o zero, apesar de muito pequena em 2019, contudo, surpreendentemente, os treineiros tiraram maiores notas do que os não treineiros, o que poderia ser explicado pelo fato de a população dos treineiros se inserir em um contexto de maior preparação do que a média da população dos não treineiros. A hipótese nula, pois, não pode ser aceita nesse caso.")
+        st.write("2. Depois da pandemia (2020 e 2022), a diferença entre as médias das notas de treineiros e não treineiros foi irrisória. A hipótese nula é cabível, principalmente no caso de 2022 (cenário pós-pandêmico), em que o zero está no intervalo de confiança. Isso é diferente do esperado, mas provavelmente se dá, pois os universos de pessoas que fazem e não fazem o ENEM como treineiras são influenciados por outras variáveis essa. De fato, em todos os anos, como se pode ver no tamanho das populações, há uma considerável maior quantidade de pessoas que fazem o ENEM como não treineiras, e é provável que nem todas essas pessoas tenham feito o ENEM antes para testarem os seus conhecimentos.")
+
+        st.write("Uma explicação plausível para isso, pensando em experiências pessoais e em conversas com amigos, é a de que as pessoas que costumam fazer o ENEM como treineiras tendem a ser aquelas que se preparam para a prova com maior dedicação, então a média de suas notas tende a ser 'mais alta' do que o esperado.")
+        st.write("Já a grande população que faz o ENEM 'para valer' engloba tanto os que já se preparavam há mais tempo e, pois, tiram boa notas, quanto os que não havido sido tão bem preparados para a prova, o que não eleva muito a média geral.")
+        st.write("Nesse caso, apenas com esses dados - e sem a possibilidade de identificar exatamente as pessoas que fizeram como treineiras antes e depois refizeram a prova no ano de seu vestibular, para de fato ter uma noção embasada da influência dessa variável -, a hipótese nula é aceita.")
+        st.write("Assim, apenas com essa análise superficial (pelos motivos citados acima), não faz diferença fazer o ENEM antes do ano do vestibular no cenário pós pandemia. Contudo, veremos que essa conclusão continua incerta quando aplicamos a regressão linear.")
+
+
+    with st.container():
+        st.write("---")
+        st.subheader("Regressão Linear")
+
+
+        st.image("imagens julia/3.png")
+        st.image("imagens julia/4.png")
+
+        st.write("Os resultados da regressão corroboram as conclusões tiradas na sessão anterior. Os intervalos de confiança da constante e dos coeficientes de treino, que medem a influência de ser treineiro na média das notas, continuam indicando um discreto decréscimo de nota nos anos antes da pandemia e irrisório nos anos pós pandemia. Observa-se, ainda, que os MSEs são muito altos em todos os casos, o que frisa a ideia de que a relação entre essas variáveis não é bem prevista apenas com essa análise.")
+        st.write("De fato, já tínhamos chegado à conclusão de que mais variáveis afetam as notas de treineiros e não treineiros, sendo essa visualização isoladamente insuficiente para caracterizar de fato a influência que existe na nota final que um aluno obtém no ENEM de seu vestibular se ele fez a prova antes como treineiro.")
